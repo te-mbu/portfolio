@@ -49,7 +49,7 @@ const Stack = () => {
       id: 8,
       src: "nextjs.png",
       title: "Next",
-      style: "shadow-dark",
+      style: "shadow-gray-500",
     },
     {
       id: 9,
@@ -60,12 +60,12 @@ const Stack = () => {
   ];
   return (
     <div className=" w-full mt-24">
-      <div className=" mx-auto flex flex-col justify-center items-center w-full h-full max-w-7xl text-light">
+      <div className=" mx-auto flex flex-col justify-center items-center w-full h-full max-w-7xl text-light dark:text-dark">
         <div className="w-full flex flex-col justify-center items-start">
-          <p className="text-3xl font-bold border-b-4 border-dark/75 inline text-dark/75">
+          <p className="text-3xl font-bold border-b-4 border-dark/75 dark:border-light/75 inline text-dark/75 dark:text-light/75">
             Stack
           </p>
-          <p className="py-6 text-dark font-medium">
+          <p className="py-6 text-dark dark:text-light font-medium">
             These are the technologies I've worked with :
           </p>
         </div>
@@ -83,7 +83,7 @@ const Stack = () => {
                   className="object-cover"
                 />
               </div>
-              <p className="mt-4 text-dark font-medium">{data.title}</p>
+              <p className="mt-4 text-dark dark:text-light font-medium">{data.title}</p>
             </div>
           ))}
         </div>

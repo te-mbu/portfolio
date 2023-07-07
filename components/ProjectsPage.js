@@ -7,8 +7,8 @@ import { AiFillGithub } from "react-icons/ai";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between  rounded-3xl border border-solid border-dark bg-light p-12 relative">
-      <div className="absolute top-0 -z-10 w-[101%] h-[103%] -translate-x-11  rounded-[2.5rem] bg-dark shadow-2xl" />
+    <article className="w-full flex items-center justify-between  rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-dark p-12 relative">
+      <div className="absolute top-0 -z-10 w-[101%] h-[103%] -translate-x-11  rounded-[2.5rem] bg-dark dark:bg-light shadow-2xl" />
 
       <Link
         href={link}
@@ -31,17 +31,17 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           target="_blank"
           className="hover:underline hover:underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold text-dark dark:text-light">{title}</h2>
         </Link>
-        <p className="my-2 font-medium text-dark">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
         <div className="flex mt-2 items-center ">
           <Link href={github} target="_blank">
-            <AiFillGithub size={40} color="#1B1B1B" />
+            <AiFillGithub size={40} className="fill-dark dark:fill-light"/>
           </Link>
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold"
+            className="ml-4 rounded-lg bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 text-lg font-semibold"
           >
             Visit Project
           </Link>
@@ -53,8 +53,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-between  rounded-3xl border border-solid border-dark bg-light p-6 relative">
-      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark shadow-2xl" />
+    <article className="w-full flex flex-col items-center justify-between  rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-dark p-6 relative">
+      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light shadow-2xl" />
       <Link
         href={link}
         target="_blank"
@@ -76,14 +76,14 @@ const Project = ({ title, type, img, link, github }) => {
           target="_blank"
           className="hover:underline hover:underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold text-dark dark:text-light">{title}</h2>
         </Link>
         <div className="flex mt-2 w-full items-center justify-between">
-          <Link href={link} target="_blank" className="font-semibold underline">
+          <Link href={link} target="_blank" className="font-semibold underline text-dark dark:text-light">
             Visit
           </Link>
           <Link href={github} target="_blank">
-            <AiFillGithub size={40} color="#1B1B1B" />
+            <AiFillGithub size={40} className="fill-dark dark:fill-light" />
           </Link>
         </div>
       </div>

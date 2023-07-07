@@ -13,7 +13,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
       whileInView={{y:0}}
       transition={{duration:0.5, type:"spring"}}
       >
-        <h3 className="capitalize font-bold text-2xl">
+        <h3 className="capitalize font-bold text-2xl text-dark dark:text-light">
           {position}&nbsp;
           <a
             href={companyLink}
@@ -23,10 +23,10 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             {company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
-        <p className="font-medium w-full">{work}</p>
+        <p className="font-medium w-full text-dark dark:text-light">{work}</p>
       </motion.div>
     </li>
   );
@@ -41,13 +41,13 @@ const Experiences = () => {
 
   return (
     <div className="my-16">
-      <h2 className="text-3xl font-bold border-b-4 border-dark/75 inline text-dark/75">
+      <h2 className="text-3xl font-bold border-b-4 border-dark/75 dark:border-light/75 inline text-dark/75 dark:text-light/75">
         Experiences
       </h2>
       <div ref={ref} className="w-full mx-auto relative mt-14">
         <motion.div 
         style={{scaleY: scrollYProgress}}
-        className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top" />
+        className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top" />
         <ul className="w-full flex flex-col items-start justify-between ml-4 ">
           <Details
             position="Freelance Fullstack Web Developer"

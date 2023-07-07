@@ -17,7 +17,7 @@ const Icons = () => {
         whileTap={{ scale: 0.9 }}
         className="mr-3"
       >
-        <AiFillGithub size={30} className={mode === "light" ? "fill-dark" : "fill-light"}  />
+        <AiFillGithub size={30} className="fill-dark dark:fill-light" />
       </motion.a>
       <motion.a
         href="https://www.linkedin.com/in/t%C3%A9rence-mbu-505434135/"
@@ -35,7 +35,7 @@ const Icons = () => {
         whileTap={{ scale: 0.9 }}
         className="mx-3"
       >
-        <AiOutlineMail size={30} className={mode === "light" ? "fill-dark" : "fill-light"} />
+        <AiOutlineMail size={30} className="fill-dark dark:fill-light" />
       </motion.a>
       <motion.button
         className="ml-3"
@@ -46,7 +46,7 @@ const Icons = () => {
         {mode === "dark" ? (
           <MdLightMode
             size={30}
-            className={mode === "light" ? "fill-dark" : "fill-light"}
+            className="fill-dark dark:fill-light"
           />
         ) : (
           <MdDarkMode size={30} className="fill-dark" />
