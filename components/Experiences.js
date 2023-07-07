@@ -1,92 +1,107 @@
 import React from "react";
-import Image from "next/image";
+import { motion, useScroll } from "framer-motion";
+import { useRef } from "react";
+import LiIcon from "./LiIcon";
+
+const Details = ({ position, company, companyLink, time, address, work }) => {
+    const ref = useRef(null)
+  return (
+    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between">
+        <LiIcon reference={ref} />
+      <motion.div
+      initial={{y:50}}
+      whileInView={{y:0}}
+      transition={{duration:0.5, type:"spring"}}
+      >
+        <h3 className="capitalize font-bold text-2xl">
+          {position}&nbsp;
+          <a
+            href={companyLink}
+            target="_blank"
+            className="text-primary capitalize"
+          >
+            {company}
+          </a>
+        </h3>
+        <span className="capitalize font-medium text-dark/75">
+          {time} | {address}
+        </span>
+        <p className="font-medium w-full">{work}</p>
+      </motion.div>
+    </li>
+  );
+};
 
 const Experiences = () => {
-  const stack = [
-    {
-      id: 1,
-      src: "html.png",
-      title: "HTML",
-      style: "shadow-orange-500",
-    },
-    {
-      id: 2,
-      src: "css.png",
-      title: "CSS",
-      style: "shadow-blue-500",
-    },
-    {
-      id: 3,
-      src: "javascript.png",
-      title: "Javascript",
-      style: "shadow-yellow-500",
-    },
-    {
-      id: 4,
-      src: "react.png",
-      title: "React",
-      style: "shadow-blue-600",
-    },
-    {
-      id: 5,
-      src: "node.png",
-      title: "Node",
-      style: "shadow-green-500",
-    },
-    {
-      id: 6,
-      src: "tailwind.png",
-      title: "Tailwind",
-      style: "shadow-sky-400",
-    },
-    {
-      id: 7,
-      src: "github.png",
-      title: "Github",
-      style: "shadow-gray-400",
-    },
-    {
-      id: 8,
-      src: "nextjs.png",
-      title: "Next",
-      style: "shadow-dark",
-    },
-    {
-      id: 9,
-      src: "reduxx.png",
-      title: "Redux",
-      style: "shadow-violet-500",
-    },
-  ];
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "center start"]
+  });
+
   return (
-    <div className=" w-full mt-24">
-      <div className=" mx-auto flex flex-col justify-center items-center w-full h-full max-w-7xl text-light">
-        <div className="w-full flex flex-col justify-center items-start">
-          <p className="text-3xl font-bold border-b-4 border-dark/75 inline text-dark/75">
-            Experience
-          </p>
-          <p className="py-6 text-dark font-medium">
-            These are the technologies I've worked with :
-          </p>
-        </div>
-        <div className="w-full grid grid-cols-2 md:grid-cols-3 place-items-center gap-8 text-center m-auto">
-          {stack.map((data, i) => (
-            <div
-              key={data.id}
-              className={`shadow-md w-full max-w-[200px] hover:scale-105 duration-500 py-2 rounded-lg ${data.style}`}
-            >
-              <div className="relative w-20 h-20 aspect-square mx-auto">
-                <Image
-                  src={`/images/stack/${data.src}`}
-                  alt={data.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="mt-4 text-dark font-medium">{data.title}</p>
-            </div>
-          ))}
-        </div>
+    <div className="my-16">
+      <h2 className="text-3xl font-bold border-b-4 border-dark/75 inline text-dark/75">
+        Experiences
+      </h2>
+      <div ref={ref} className="w-full mx-auto relative mt-14">
+        <motion.div 
+        style={{scaleY: scrollYProgress}}
+        className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top" />
+        <ul className="w-full flex flex-col items-start justify-between ml-4 ">
+          <Details
+            position="Freelance Fullstack Web Developer"
+            time="2023 - Present"
+            address="Paris, France"
+            work="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          />
+          <Details
+            position="Software QA Engineer"
+            company="@Vade Secure"
+            companyLink="https://www.vadesecure.com/fr/"
+            time="2020 - 2022"
+            address="Paris, France"
+            work="o Build a mail generator that allows to send emails from scratch or from a mail database.
+
+Key features:
+- Easy to use: Developed to be intuitive and easy to use for the final users.
+- Customizable: Many personalization options to generate and send customized emails
+
+- Build mail generator user interface using Javacript, HTML, CSS
+- Build API using Fastapi
+- Web scraping solutions development to parse data using Python and BeautifulSoup
+- Creating module tests and unit tests using Pytest
+- Implementation of functional tests in Python.
+- Asynchronous programming
+- Set up the CLI App using Python and Typer
+- Documentation using Mkdocs
+
+Project management and environment:
+- Git / Gitlab
+- Gitlab runners (CI/CD)
+- Pre-commit hook (flake8, mypy, black)
+ - Linux system (Ubuntu 20)
+
+
+Technologies used: Python, Javascript, HTML, CSS, Fastapi, Gitlab, Gitlab CI, BeautifulSoup
+
+o QA
+
+- API testing
+- Reporting issues using Jira and monitoring the status
+- Cucumber
+- Cypress"
+          />
+          <Details
+            position="Software Developer Intern"
+            company="@Komit"
+            companyLink="https://komit-consulting.com/"
+            time="2018 - 2019"
+            address="Hô-Chi-Minh, Vietnam"
+            work="- Introduction to erp development (Odoo platform)
+            - Mobile app development (Angular)"
+          />
+        </ul>
       </div>
     </div>
   );

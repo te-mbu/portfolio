@@ -2,7 +2,9 @@ import React from "react";
 import AnimatedText from "./AnimatedText";
 import Layout from "./Layout";
 import Image from "next/image";
+import Stack from "./Stack";
 import Experiences from "./Experiences";
+import Education from "./Education"
 
 const AboutPage = () => {
   return (
@@ -47,7 +49,9 @@ const AboutPage = () => {
             <div className="absolute w-[460px] h-[460px] top-[50%] translate-x-3 -translate-y-[47%] rounded-[2rem] bg-dark z-0 border-2 border-solid border-dark shadow-2xl"></div>
           </div>
         </div>
+        <Stack />
         <Experiences />
+        <Education />
       </Layout>
     </main>
   );
