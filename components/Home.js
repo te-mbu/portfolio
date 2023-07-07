@@ -3,9 +3,8 @@ import Layout from "./Layout";
 import Image from "next/image";
 import AnimatedText from "./AnimatedText";
 import Link from "next/link";
-import { BiLinkExternal } from "react-icons/bi"
+import { BiLinkExternal } from "react-icons/bi";
 import HireMe from "./HireMe";
-
 
 const Home = () => {
   return (
@@ -18,6 +17,8 @@ const Home = () => {
               alt="Térence MBU"
               fill
               className="w-full object-cover rounded-full border-2 shadow-lg shadow-dark dark:shadow-light"
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
           <div className="w-1/2 flex flex-col items-center self-center">
@@ -37,9 +38,14 @@ const Home = () => {
                 className="flex items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light"
                 download={true}
               >
-                Resume<BiLinkExternal size={20} className="ml-1"/>
+                Resume
+                <BiLinkExternal size={20} className="ml-1" />
               </Link>
-              <Link href="mailto:mbu.terence@gmail.com" target="_blank" className="ml-4 text-lg font-medium capitalize text-dark dark:text-light underline">
+              <Link
+                href="mailto:mbu.terence@gmail.com"
+                target="_blank"
+                className="ml-4 text-lg font-medium capitalize text-dark dark:text-light underline"
+              >
                 Contact
               </Link>
             </div>

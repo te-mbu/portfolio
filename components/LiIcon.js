@@ -13,7 +13,7 @@ const LiIcon = ({ reference }) => {
           cx="75"
           cy="50"
           r="20"
-          className="stroke-primary stroke-1 fill-none"
+          className="stroke-primary dark:stroke-primaryDark stroke-1 fill-none"
         />
         <motion.circle
           cx="75"

@@ -43,6 +43,8 @@ const AboutPage = () => {
                 fill
                 alt="Térence MBU"
                 className="object-cover rounded-2xl"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="absolute w-[450px] h-[450px] top-[50%] -translate-y-1/2 rounded-2xl bg-light dark:bg-dark z-10 border-2 border-solid border-dark dark:border-light"></div>
