@@ -7,7 +7,9 @@ import { AiFillGithub } from "react-icons/ai";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between  rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12">
+    <article className="w-full flex items-center justify-between  rounded-3xl border border-solid border-dark bg-light p-12 relative">
+      <div className="absolute top-0 -z-10 w-[101%] h-[103%] -translate-x-11  rounded-[2.5rem] bg-dark shadow-2xl" />
+
       <Link
         href={link}
         target="_blank"
@@ -51,7 +53,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-between  rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6 relative">
+    <article className="w-full flex flex-col items-center justify-between  rounded-3xl border border-solid border-dark bg-light p-6 relative">
+      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark shadow-2xl" />
       <Link
         href={link}
         target="_blank"
@@ -93,7 +96,7 @@ const ProjectsPage = () => {
     <main className="w-full mb-16 flex flex-col items-center justify-center">
       <Layout className="pt-16">
         <AnimatedText text="Imagination Trumps Knowledge!" className="mb-16" />
-        <div className="grid grid-cols-12 gap-24">
+        <div className="grid grid-cols-12 gap-24 gap-y-32">
           <div className="col-span-12">
             <FeaturedProject
               title="Portfolio"
