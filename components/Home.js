@@ -4,6 +4,7 @@ import Image from "next/image";
 import AnimatedText from "./AnimatedText";
 import Link from "next/link";
 import { BiLinkExternal } from "react-icons/bi"
+import HireMe from "./HireMe";
 
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
     <main className="flex items-center text-dark w-full min-h-screen">
       <Layout>
         <div className="flex items-center justify-between gap-4 w-full h-full">
-          <div className="relative aspect-square w-1/2 max-w-2xl h-auto rounded-full bg-light">
+          <div className="relative aspect-square w-2/5 max-w-2xl h-auto rounded-full bg-light">
             <Image
               src="/images/profile/profile-1.png"
               alt="Térence MBU"
@@ -45,6 +46,7 @@ const Home = () => {
           </div>
         </div>
       </Layout>
+      <HireMe />
     </main>
   );
 };
