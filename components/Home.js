@@ -27,7 +27,7 @@ const Home = () => {
               className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text3xl"
             />
             <p className="my-4 text-base font-medium md:text-md sm:text-sm md:my-8">
-              I'm a France based Fullstack Web Developer dedicated to turning ideas
+              I&apos;m a France based Fullstack Web Developer dedicated to turning ideas
               into innovative, clean & user-friendly web applications. Explore my latest projects showcasing my expertise in React.js and web development.
             </p>
             <div className="flex items-center self-start mt-2 lg:self-center sm:mb-16">

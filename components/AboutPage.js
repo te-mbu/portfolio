@@ -22,7 +22,7 @@ const AboutPage = () => {
               About Me
             </h2>
             <p className="font-medium dark:text-light">
-              Hi, I'm Térence MBU, a web developer dedicated for creating
+              Hi, I&#39;m Térence MBU, a web developer dedicated for creating
               beautiful, functional, and user-centered digital experiences. I
               have honed my skills through hands-on experiences and a drive for
               continuous learning. Through my educational journey, I have

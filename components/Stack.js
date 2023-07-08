@@ -66,7 +66,7 @@ const Stack = () => {
             Stack
           </p>
           <p className="py-6 text-dark dark:text-light font-medium">
-            These are the technologies I've worked with :
+            These are the technologies I&apos;ve worked with :
           </p>
         </div>
         <div className="w-full max-w-7xl grid grid-cols-3 md:grid-cols-2 place-items-center gap-8 text-center m-auto">

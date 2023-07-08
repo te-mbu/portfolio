@@ -64,7 +64,7 @@ const Education = () => {
                     Redux
                   </li>
                   <li>Back-end programming: Node.JS / Express</li>
-                  <li>Database: Mongo DB • Workflow: Git / Github"</li>
+                  <li>Database: Mongo DB</li>
                 </ul>
               </>
             }
