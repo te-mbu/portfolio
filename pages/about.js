@@ -10,9 +10,7 @@ function About() {
         <meta name="About" content="About Page" />
       </Head>
       <TransitionEffect />
-      <div className="bg-light dark:bg-dark">
-        <AboutPage />;
-      </div>
+      <AboutPage />;
     </>
   );
 }

@@ -6,7 +6,7 @@ function Index() {
   return (
     <>
       <Head>
-        <title>Térence MBU | Homepage</title>
+        <title>Térence MBU | Portfolio</title>
         <meta name="Home" content="Homepage" />
       </Head>
       <TransitionEffect />

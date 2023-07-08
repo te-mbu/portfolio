@@ -10,7 +10,7 @@ const Footer = () => {
           {new Date().getFullYear()} &copy; All Rights Reserved.
         </span>
         <div className="flex items-center text-dark dark:text-light lg:p-2">
-          Build With{" "}
+          Built With{" "}
           <span className="text-primary dark:text-primaryDark text-2xl px-1">
             &#9825;
           </span>
