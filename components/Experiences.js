@@ -4,14 +4,17 @@ import { useRef } from "react";
 import LiIcon from "./LiIcon";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
-    const ref = useRef(null)
+  const ref = useRef(null);
   return (
-    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]">
-        <LiIcon reference={ref} />
+    <li
+      ref={ref}
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+    >
+      <LiIcon reference={ref} />
       <motion.div
-      initial={{y:50}}
-      whileInView={{y:0}}
-      transition={{duration:0.5, type:"spring"}}
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl text-dark dark:text-light sm:text-xl xs:text-lg">
           {position}&nbsp;
@@ -26,7 +29,9 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {address}
         </span>
-        <p className="font-medium w-full text-dark dark:text-light md:text-sm">{work}</p>
+        <p className="font-medium w-full text-dark dark:text-light md:text-sm">
+          {work}
+        </p>
       </motion.div>
     </li>
   );
@@ -36,7 +41,7 @@ const Experiences = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center start"]
+    offset: ["start end", "center start"],
   });
 
   return (
@@ -45,15 +50,26 @@ const Experiences = () => {
         Experiences
       </h2>
       <div ref={ref} className="w-full mx-auto relative mt-14">
-        <motion.div 
-        style={{scaleY: scrollYProgress}}
-        className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top md:w-[2px] md:left-[30px] xs:left-[20px]" />
+        <motion.div
+          style={{ scaleY: scrollYProgress }}
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top md:w-[2px] md:left-[30px] xs:left-[20px]"
+        />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 ">
           <Details
             position="Freelance Fullstack Web Developer"
             time="2023 - Present"
             address="Paris, France"
-            work="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            work={
+              <>
+                <ul className="list-disc">
+                  <li>Designing and developing responsive and visually appealing web applications using React, Tailwind CSS, and Next.js</li>
+                  <li>Collaborating closely with clients to understand their requirements and translate them into functional and elegant websites.</li>
+                  <li>Implementing front-end designs using modern frameworks ensuring optimal performance</li>
+                  <li>Providing ongoing website maintenance and support, including bug fixes and updates.</li>
+                  <li>Demonstrating strong problem-solving skills and the ability to work independently while meeting project deadlines</li>
+                </ul>
+              </>
+            }
           />
           <Details
             position="Software QA Engineer"
@@ -61,36 +77,80 @@ const Experiences = () => {
             companyLink="https://www.vadesecure.com/fr/"
             time="2020 - 2022"
             address="Paris, France"
-            work="o Build a mail generator that allows to send emails from scratch or from a mail database.
-
-Key features:
-- Easy to use: Developed to be intuitive and easy to use for the final users.
-- Customizable: Many personalization options to generate and send customized emails
-
-- Build mail generator user interface using Javacript, HTML, CSS
-- Build API using Fastapi
-- Web scraping solutions development to parse data using Python and BeautifulSoup
-- Creating module tests and unit tests using Pytest
-- Implementation of functional tests in Python.
-- Asynchronous programming
-- Set up the CLI App using Python and Typer
-- Documentation using Mkdocs
-
-Project management and environment:
-- Git / Gitlab
-- Gitlab runners (CI/CD)
-- Pre-commit hook (flake8, mypy, black)
- - Linux system (Ubuntu 20)
-
-
-Technologies used: Python, Javascript, HTML, CSS, Fastapi, Gitlab, Gitlab CI, BeautifulSoup
-
-o QA
-
-- API testing
-- Reporting issues using Jira and monitoring the status
-- Cucumber
-- Cypress"
+            work={
+              <>
+                <br />
+                <span className="font-semibold">
+                  Build a mail generator that allows to send emails from scratch
+                  or from a mail database
+                </span>
+                <br />
+                <br />
+                <span className="underline">Key features:</span>
+                <br />
+                <ul className="list-disc">
+                  <li>
+                    Easy to use: Developed to be intuitive and easy to use for
+                    the final users
+                  </li>
+                  <li>
+                    Customizable: Many personalization options to generate and
+                    send customized emails
+                  </li>
+                  <br />
+                  <span className="underline">Missions:</span>
+                  <li>
+                    Developed user interface for a mail generator application,
+                    ensuring an intuitive and user-friendly experience
+                  </li>
+                  <li>
+                    Built APIs using FastAPI to facilitate seamless
+                    communication between various system components
+                  </li>
+                  <li>
+                    Developed robust web scraping solutions using Python and
+                    BeautifulSoup to extract and parse data from diverse sources
+                  </li>
+                  <li>
+                    Implemented comprehensive module tests and unit tests using
+                    Pytest, ensuring reliable and error-free code functionality
+                  </li>
+                  <li>
+                    Ensured comprehensive documentation of projects using
+                    Mkdocs, facilitating knowledge sharing and team
+                    collaboration
+                  </li>
+                </ul>
+                <br />
+                <span className="underline">
+                  Project management and environment:
+                </span>
+                <br />
+                <ul className="list-disc">
+                  <li>Git / Gitlab - Gitlab runners (CI/CD)</li>
+                  <li>Linux system (Ubuntu 20)</li>
+                </ul>
+                <br />
+                <span className="underline">Technologies used:</span>
+                <p>
+                  Python, Javascript, HTML, CSS, Fastapi, Gitlab, Gitlab CI,
+                  BeautifulSoup
+                </p>
+                <br />
+                <span className="font-semibold">QA - API testing</span>
+                <br />
+                <ul className="list-disc">
+                  <li>
+                    Developing and implementing quality control procedures and
+                    standards to ensure product/service quality and compliance
+                  </li>
+                  <li>Reporting issues using Jira and monitoring the status</li>
+                </ul>
+                <br />
+                <span className="underline">Technologies used:</span>
+                <p>Cucumber, Cypress</p>
+              </>
+            }
           />
           <Details
             position="Software Developer Intern"
@@ -98,8 +158,14 @@ o QA
             companyLink="https://komit-consulting.com/"
             time="2018 - 2019"
             address="Hô-Chi-Minh, Vietnam"
-            work="- Introduction to erp development (Odoo platform)
-            - Mobile app development (Angular)"
+            work={
+              <>
+              <ul className="list-disc">
+                <li>Developed expertise in ERP development, specializing in the Odoo platform, to create reliable and scalable enterprise solutions</li>
+                <li>Obtained a moderate proficiency in mobile app development using Angular</li>
+              </ul>
+              </>
+            }
           />
         </ul>
       </div>

@@ -11,33 +11,29 @@ const AboutPage = () => {
     <main className="flex flex-col w-full items-center justify-center">
       <Layout className="pt-16">
         <AnimatedText
-          text="Passion Fuels Purpose! "
+          text="Who is this guy ?"
           className="mb-24 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
         />
         {/* PARENT */}
         <div className="w-full flex items-center justify-between -z-10 lg:flex-col lg:gap-10 ">
           {/* ENFANT 1 */}
           <div className="w-1/2 flex flex-col items-start justify-between lg:w-full ">
-            <h2 className="mb-4 text-3xl font-bold border-b-4 border-dark/75 dark:border-light/75 p-2 inline text-dark/75 dark:text-light/75">
+            <h2 className="mb-4 text-3xl font-bold border-b-4 border-dark/75 dark:border-light/75 inline text-dark/75 dark:text-light/75">
               About Me
             </h2>
             <p className="font-medium dark:text-light">
-              Hi, I'm CodeBucks, a web developer and UI/UX designer with a
-              passion for creating beautiful, functional, and user-centered
-              digital experiences. With 4 years of experience in the field. I am
-              always looking for new and innovative ways to bring my clients'
-              visions to life.
+              Hi, I'm Térence MBU, a web developer dedicated for creating
+              beautiful, functional, and user-centered digital experiences. I
+              have honed my skills through hands-on experiences and a drive for
+              continuous learning. Through my educational journey, I have
+              cultivated a solid foundation and developed a sharp eye for detail.
             </p>
             <p className="font-medium my-4 dark:text-light">
-              I believe that design is about more than just making things look
-              pretty – it's about solving problems and creating intuitive,
-              enjoyable experiences for users.{" "}
+              I am driven by the desire to push boundaries and deliver high-quality
+              work that leaves a positive impact on users.
             </p>
             <p className="font-medium dark:text-light">
-              Whether I'm working on a website, mobile app, or other digital
-              product, I bring my commitment to design excellence and
-              user-centered thinking to every project I work on. I look forward
-              to the opportunity to bring my skills and passion to your next
+              I look forward to the opportunity to bring my skills to your next
               project.
             </p>
           </div>

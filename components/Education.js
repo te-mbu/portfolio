@@ -22,7 +22,9 @@ const Details = ({ type, time, place, info }) => {
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {place}
         </span>
-        <p className="font-medium w-full text-dark dark:text-light md:text-sm">{info}</p>
+        <p className="font-medium w-full text-dark dark:text-light md:text-sm">
+          {info}
+        </p>
       </motion.div>
     </li>
   );
@@ -50,20 +52,28 @@ const Education = () => {
             type="Web and Mobile Fullstack Coding Bootcamp"
             time="2023"
             place="La Capsule - Paris, France"
-            info="10-week coding bootcamp - Web and Mobile Fullstack JavaScript Developer
-
-            
-            • Design and prototyping of web and mobile applications
-            • Front-end programming: HTML5 / CSS / JavaScript / React / Redux
-            • Back-end programming: Node.JS / Express
-            • Database: Mongo DB
-            • Workflow: Git / Github"
+            info={
+              <>
+                10-week coding bootcamp - Web and Mobile Fullstack JavaScript
+                Development
+                <br />
+                <ul className="list-disc">
+                  <li>Design and prototyping of web and mobile applications</li>
+                  <li>
+                    Front-end programming: HTML5 / CSS / JavaScript / React /
+                    Redux
+                  </li>
+                  <li>Back-end programming: Node.JS / Express</li>
+                  <li>Database: Mongo DB • Workflow: Git / Github"</li>
+                </ul>
+              </>
+            }
           />
           <Details
             type="Master 2 - Industries de Réseau et Économie Numérique"
             time="2021 - 2022"
             place="Université Paris Dauphine (PSL) - Paris, France"
-            info="Master's degree jointly directed by Paris Dauphine University, École Polytechnique, CentraleSupélec, Télécom Paris, Paris-Saclay University"
+            info="Master's degree jointly directed by Université Paris Dauphine (PSL), École Polytechnique, CentraleSupélec, Télécom Paris, Paris-Saclay University"
           />
           <Details
             type="Master 1 - Systèmes d’informations et économie numérique"
@@ -72,10 +82,10 @@ const Education = () => {
           />
           <Details
             type="École 42"
-            time="2019 - 2020"
+            time="2019 - 2021"
             place="École 19 (42 Network) - Brussels, Belgium"
             // TODO
-            info=""
+            info="At School 42, I completed an intensive Fullstack Software Engineering program. This unique educational experience emphasized hands-on learning and collaboration within a peer-to-peer environment. The curriculum focused on developing essential programming skills and problem-solving abilities through engaging projects and real-world challenges. During my time at School 42, I gained a solid foundation in various programming languages, frameworks, and development methodologies. This experience not only sharpened my technical proficiency but also fostered valuable teamwork and adaptability skills."
           />
         </ul>
       </div>
