@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const HireMe = () => {
   return (
-    <div className="fixed left-4 bottom-4 flex flex-col items-center justify-center overflow-hidden md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute">
+    <div className="fixed left-4 bottom-4 flex flex-col items-center justify-center overflow-hidden md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute sm:right-0">
       <div className="w-48 h-48 md:w-24 md:h-24  relative">
         <Image
           src="/images/svgs/circular-text.svg"
