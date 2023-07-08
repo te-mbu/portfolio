@@ -11,7 +11,7 @@ const Home = () => {
     <main className="flex items-center text-dark dark:text-light w-full min-h-screen">
       <Layout className="pt-0 md:pt-16 sm:pt-8">
         <div className="flex items-center justify-between gap-4 w-full h-full lg:flex-col">
-          <div className="relative aspect-square w-1/2 max-w-xl md:inline-block sm:w-2/3 h-auto rounded-full bg-light">
+          <div className="relative aspect-square w-1/2 max-w-lg md:inline-block 2xl:w-[400px] sm:w-2/3 h-auto rounded-full bg-light">
             <Image
               src="/images/profile/profile-1.png"
               alt="Térence MBU"
