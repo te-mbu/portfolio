@@ -1,7 +1,18 @@
-import Home from '../components/Home';
+import Home from "../components/Home";
+import TransitionEffect from "../components/TransitionEffect";
+import Head from "next/head";
 
 function Index() {
-  return <Home />;
+  return (
+    <>
+      <Head>
+        <title>Térence MBU | Homepage</title>
+        <meta name="Home" content="Homepage" />
+      </Head>
+      <TransitionEffect />
+      <Home />;
+    </>
+  );
 }
 
 export default Index;
