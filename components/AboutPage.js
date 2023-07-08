@@ -4,15 +4,20 @@ import Layout from "./Layout";
 import Image from "next/image";
 import Stack from "./Stack";
 import Experiences from "./Experiences";
-import Education from "./Education"
+import Education from "./Education";
 
 const AboutPage = () => {
   return (
     <main className="flex flex-col w-full items-center justify-center">
       <Layout className="pt-16">
-        <AnimatedText text="Passion Fuels Purpose! " className="mb-24" />
-        <div className="grid w-full grid-cols-8 gap-16 max-w-6xl m-auto text-dark dark:text-light">
-          <div className="col-span-4 flex flex-col items-start justify-start">
+        <AnimatedText
+          text="Passion Fuels Purpose! "
+          className="mb-24 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+        />
+        {/* PARENT */}
+        <div className="w-full flex items-center justify-between -z-10 lg:flex-col lg:gap-10 ">
+          {/* ENFANT 1 */}
+          <div className="w-1/2 flex flex-col items-start justify-between lg:w-full ">
             <h2 className="mb-4 text-3xl font-bold border-b-4 border-dark/75 dark:border-light/75 p-2 inline text-dark/75 dark:text-light/75">
               About Me
             </h2>
@@ -36,8 +41,9 @@ const AboutPage = () => {
               project.
             </p>
           </div>
-          <div className="col-span-4 relative rounded-2xl flex items-center justify-center ">
-            <div className="absolute w-[400px] aspect-square top-[50%] z-20 -translate-y-1/2">
+          {/* ENFANT 2 */}
+          <div className="w-1/2 max-w-xl h-full flex items-center justify-center mr-32 -z-0 lg:w-2/3 2xl:mr-0 md:w-5/6 sm:w-full">
+            <div className="relative h-full w-3/4 aspect-square ">
               <Image
                 src="/images/profile/profile-2.jpg"
                 fill
@@ -46,9 +52,9 @@ const AboutPage = () => {
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
+              <div className="absolute w-[105%] h-[105%] rounded-[2rem]  bg-dark dark:bg-light -z-10 border-2 border-solid border-dark dark:border-light shadow-2xl"></div>
+              <div className="absolute w-[106%] h-[106%]  left-[50%]  translate-x-[-50%] top-[50%]  translate-y-[-50%] -z-10 rounded-2xl bg-light dark:bg-dark  border-2 border-solid border-dark dark:border-light"></div>
             </div>
-            <div className="absolute w-[450px] h-[450px] top-[50%] -translate-y-1/2 rounded-2xl bg-light dark:bg-dark z-10 border-2 border-solid border-dark dark:border-light"></div>
-            <div className="absolute w-[460px] h-[460px] top-[50%] translate-x-3 -translate-y-[47%] rounded-[2rem] bg-dark dark:bg-light z-0 border-2 border-solid border-dark dark:border-light shadow-2xl"></div>
           </div>
         </div>
         <Stack />

@@ -60,7 +60,7 @@ const Stack = () => {
   ];
   return (
     <div className=" w-full mt-24">
-      <div className=" mx-auto flex flex-col justify-center items-center w-full h-full max-w-7xl text-light dark:text-dark">
+      <div className=" mx-auto flex flex-col justify-center w-full h-full text-light dark:text-dark">
         <div className="w-full flex flex-col justify-center items-start">
           <p className="text-3xl font-bold border-b-4 border-dark/75 dark:border-light/75 inline text-dark/75 dark:text-light/75">
             Stack
@@ -69,7 +69,7 @@ const Stack = () => {
             These are the technologies I've worked with :
           </p>
         </div>
-        <div className="w-full grid grid-cols-2 md:grid-cols-3 place-items-center gap-8 text-center m-auto">
+        <div className="w-full max-w-7xl grid grid-cols-3 md:grid-cols-2 place-items-center gap-8 text-center m-auto">
           {stack.map((data, i) => (
             <div
               key={data.id}
