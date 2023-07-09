@@ -9,12 +9,8 @@ function About() {
         <title>Térence MBU | About Page</title>
         <meta name="About" content="About Page" />
       </Head>
-      <div className="
-      !bg-light dark:!bg-dark">
-
       <TransitionEffect />
       <AboutPage />;
-      </div>
     </>
   );
 }

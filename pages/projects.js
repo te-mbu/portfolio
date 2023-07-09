@@ -9,11 +9,8 @@ function Projects() {
         <title>Térence MBU | Projects Page</title>
         <meta name="Projects" content="Project Page" />
       </Head>
-      <div className="!bg-light dark:!bg-dark">
-
       <TransitionEffect />
       <ProjectsPage />;
-      </div>
     </>
   );
 }

@@ -24,7 +24,7 @@ function App({ Component, pageProps }) {
         <link rel="icon" href="#" /> /
       </Head>
       <main
-        className={`${montserrat.variable} font-mont bg-light absolute inset-0 dark:bg-dark w-full min-h-screen overflow-auto`}
+        className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen overflow-auto`}
       >
         <NavBar />
         <AnimatePresence mode="wait">

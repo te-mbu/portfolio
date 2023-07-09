@@ -9,11 +9,8 @@ function Index() {
         <title>Térence MBU | Portfolio</title>
         <meta name="Home" content="Homepage" />
       </Head>
-      <div className="!bg-light dark:!bg-dark">
       <TransitionEffect />
       <Home />;
-
-      </div>
     </>
   );
 }
