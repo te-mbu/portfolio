@@ -132,7 +132,7 @@ const ProjectsPage = () => {
             <Project
               title="Cabinet RD"
               img="/images/projects/cabinet-rd.png"
-              type="Client's podiatry website"
+              type="Client's Podiatry Website"
               link="#"
               github="#"
             />
