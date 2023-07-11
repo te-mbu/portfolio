@@ -12,8 +12,12 @@ const montserrat = Montserrat({
 });
 
 function App({ Component, pageProps }) {
-  const router = useRouter();
 
+  const handleTouchMove = (event) => {
+    event.preventDefault();
+  };
+
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -23,7 +27,8 @@ function App({ Component, pageProps }) {
         <link rel="icon" href="#" /> /
       </Head>
       <main
-        className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full overscroll-none`}
+        className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full overflow-y-auto`}
+        onTouchMove={handleTouchMove}
       >
         <NavBar />
         <AnimatePresence mode="wait">
