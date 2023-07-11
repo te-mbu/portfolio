@@ -18,7 +18,7 @@ const AboutPage = () => {
         <div className="w-full flex items-center justify-between -z-10 lg:flex-col lg:gap-10 ">
           {/* ENFANT 1 */}
           <div className="w-1/2 flex flex-col items-start justify-between lg:w-full ">
-            <h2 className="mb-4 text-3xl font-bold border-b-4 border-dark/75 dark:border-light/75 inline text-dark/75 dark:text-light/75">
+            <h2 className="mb-4 text-3xl font-bold border-b-4 border-dark/75 dark:border-light/75 inline text-dark/75 dark:text-light/75 lg:text-2xl">
               About Me
             </h2>
             <p className="font-medium dark:text-light">
