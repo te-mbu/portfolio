@@ -41,7 +41,7 @@ const AboutPage = () => {
           <div className="w-1/2 max-w-xl h-full flex items-center justify-center mr-32 -z-0 lg:w-2/3 2xl:mr-0 md:w-5/6 sm:w-full">
             <div className="relative h-full w-3/4 aspect-square ">
               <Image
-                src="/images/profile/profile-2.jpg"
+                src="/images/profile/terence.jpeg"
                 fill
                 alt="Térence MBU"
                 className="object-cover rounded-2xl"
