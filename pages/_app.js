@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -12,6 +13,17 @@ const montserrat = Montserrat({
 });
 
 function App({ Component, pageProps }) {
+
+  useEffect(() => {
+    const handleTouchMove = (event) => {
+      event.preventDefault();
+    };
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
+
+    return () => {
+      document.removeEventListener('touchmove', handleTouchMove);
+    };
+  }, []);
 
   const router = useRouter()
 
