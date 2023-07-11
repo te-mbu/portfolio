@@ -137,7 +137,7 @@ const Experiences = () => {
                   BeautifulSoup
                 </p>
                 <br />
-                <span className="font-semibold">QA - API testing</span>
+                <span className="font-semibold">QA</span>
                 <br />
                 <ul className="list-disc">
                   <li>

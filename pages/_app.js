@@ -23,8 +23,7 @@ function App({ Component, pageProps }) {
       <Head>
         <title>Next.js App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* TODO */}
-        <link rel="icon" href="#" /> /
+        <link rel="icon" href="/images/favicon/TM.png" /> /
       </Head>
       <main
         className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full overflow-y-auto`}

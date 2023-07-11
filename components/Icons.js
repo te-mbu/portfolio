@@ -36,7 +36,8 @@ const Icons = ({ isMobile }) => {
       </motion.a>
       {/* TODO */}
       <motion.a
-        href="#"
+         href="mailto:mbu.terence@gmail.com"
+         target="_blank"
         whileHover={{ y: -2 }}
         whileTap={{ scale: 0.9 }}
         className="mx-3 sm:mx-1"
