@@ -48,7 +48,7 @@ const Education = () => {
           className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-          <Details
+          {/* <Details
             type="Web and Mobile Fullstack Coding Bootcamp"
             time="2023"
             place="La Capsule - Paris, France"
@@ -68,7 +68,7 @@ const Education = () => {
                 </ul>
               </>
             }
-          />
+          /> */}
           <Details
             type="Master 2 - Industries de Réseau et Économie Numérique"
             time="2021 - 2022"
