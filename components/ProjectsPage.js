@@ -43,13 +43,19 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           {summary}
         </p>
         <div className="flex mt-2 items-center ">
-          <Link href={github} target="_blank">
-            <AiFillGithub size={40} className="fill-dark dark:fill-light" />
-          </Link>
+          {github ? (
+            <Link href={github} target="_blank">
+              <AiFillGithub size={40} className="fill-dark dark:fill-light" />
+            </Link>
+          ) : (
+            <div></div>
+          )}
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base"
+            className={`${
+              github ? "ml-4" : ""
+            } rounded-lg bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base`}
           >
             Visit Project
           </Link>
@@ -96,13 +102,16 @@ const Project = ({ title, type, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="font-semibold underline text-dark dark:text-light md:text-base"
+            className="
+               rounded-lg bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base"
           >
             Visit
           </Link>
-          <Link href={github} target="_blank">
-            <AiFillGithub size={40} className="fill-dark dark:fill-light" />
-          </Link>
+          {github ? (
+            <Link href={github} target="_blank">
+              <AiFillGithub size={40} className="fill-dark dark:fill-light" />
+            </Link>
+          ) : null}
         </div>
       </div>
     </article>
@@ -125,7 +134,7 @@ const ProjectsPage = () => {
               summary="Transformed Studio A3's vision into reality with a dynamic and responsive website powered by React and Tailwind CSS. Seamlessly blending creativity and technical finesse, the project culminated in an exceptional user experience. I'm delighted to showcase this successful collaboration."
               type="Client's Web Design Agency Website"
               link="https://studio-a3.vercel.app/"
-              github="/"
+              github=""
             />
           </div>
           <div className="col-span-12">
@@ -144,7 +153,7 @@ const ProjectsPage = () => {
               img="/images/projects/cabinetR&D.png"
               type="Client's Podiatry Website"
               link="https://cabinet-renevey-dourgian.vercel.app/"
-              github="#"
+              github=""
             />
           </div>
           <div className="col-span-6 sm:col-span-12">
