@@ -141,7 +141,7 @@ const ProjectsPage = () => {
           <div className="col-span-6 sm:col-span-12">
             <Project
               title="Cabinet RD"
-              img="/images/projects/cabinet-rd.png"
+              img="/images/projects/cabinetR&D.png"
               type="Client's Podiatry Website"
               link="https://cabinet-renevey-dourgian.vercel.app/"
               github="#"
