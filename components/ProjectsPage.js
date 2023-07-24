@@ -120,6 +120,16 @@ const ProjectsPage = () => {
         <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 sm:mt-10">
           <div className="col-span-12">
             <FeaturedProject
+              title="Studio A3"
+              img="/images/projects/studioa3.jpg"
+              summary="Transformed Studio A3's vision into reality with a dynamic and responsive website powered by React and Tailwind CSS. Seamlessly blending creativity and technical finesse, the project culminated in an exceptional user experience. I'm delighted to showcase this successful collaboration."
+              type="Client's Web Design Agency Website"
+              link="https://studio-a3.vercel.app/"
+              github="/"
+            />
+          </div>
+          <div className="col-span-12">
+            <FeaturedProject
               title="Portfolio"
               img="/images/projects/portfolio.jpg"
               summary="A professional portfolio website using React JS, Tailwind CSS, Framer-motion, and Styled-components. It has smooth page transitions, unique design and it is mobile responsive."
