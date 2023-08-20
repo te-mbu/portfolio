@@ -61,7 +61,7 @@ const Stack = () => {
   return (
     <div className=" w-full mt-24">
       <div className=" mx-auto flex flex-col justify-center w-full h-full text-light dark:text-dark">
-        <div className="w-full flex flex-col justify-center items-start">
+        <div className="w-full flex flex-col justify-center items-start pb-8">
           <p className="text-3xl font-bold border-b-4 border-dark/75 dark:border-light/75 inline text-dark/75 dark:text-light/75 lg:text-2xl">
             Tech Stack
           </p>
@@ -83,7 +83,9 @@ const Stack = () => {
                   className="object-cover"
                 />
               </div>
-              <p className="mt-4 text-dark dark:text-light font-medium">{data.title}</p>
+              <p className="mt-4 text-dark dark:text-light font-medium">
+                {data.title}
+              </p>
             </div>
           ))}
         </div>

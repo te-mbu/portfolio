@@ -56,23 +56,58 @@ const Experiences = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 ">
           <Details
-            position="Freelance Fullstack Web Developer"
+            position="React Developer"
+            company="@Freelance"
             time="2023 - Present"
             address="Paris, France"
             work={
               <>
+                <br />
+                <p>
+                  I support my clients in the creation of their web application:
+                </p>
+                <br />
                 <ul className="list-disc">
-                  <li>Designing and developing responsive and visually appealing web applications using React, Tailwind CSS, and Next.js</li>
-                  <li>Collaborating closely with clients to understand their requirements and translate them into functional and elegant websites.</li>
-                  <li>Implementing front-end designs using modern frameworks ensuring optimal performance</li>
-                  <li>Providing ongoing website maintenance and support, including bug fixes and updates.</li>
-                  <li>Demonstrating strong problem-solving skills and the ability to work independently while meeting project deadlines</li>
+                  <li>
+                    Designing and developing responsive and visually appealing
+                    web applications using React, Tailwind CSS, and Next.js
+                  </li>
+                  <li>
+                    Collaborating closely with clients to understand their
+                    requirements and translate them into functional and elegant
+                    websites.
+                  </li>
+                  <li>
+                    Implementing front-end designs using modern frameworks
+                    ensuring optimal performance
+                  </li>
+                  <li>
+                    Providing ongoing website maintenance and support, including
+                    bug fixes and updates.
+                  </li>
+                  <li>
+                    Demonstrating strong problem-solving skills and the ability
+                    to work independently while meeting project deadlines
+                  </li>
+                </ul>
+                <br />
+                <p>
+                  My goal is to provide high quality web solutions that meet
+                  each client's unique needs and provide an excellent user
+                  experience.
+                </p>
+                <br />
+                <p className="underline">Technologies:</p>
+                <ul className="list-disc">
+                  <li>Javascript, React, Tailwind, Next, Node</li>
+                  <li>Github, Gitlab, Git</li>
+                  <li>Unit test, TDD</li>
                 </ul>
               </>
             }
           />
           <Details
-            position="Software QA Engineer"
+            position="Fullstack Developer"
             company="@Vade Secure"
             companyLink="https://www.vadesecure.com/fr/"
             time="2020 - 2022"
@@ -80,29 +115,28 @@ const Experiences = () => {
             work={
               <>
                 <br />
-                <span className="font-semibold">
-                  Build a mail generator that allows to send emails from scratch
-                  or from a mail database
-                </span>
+                <p>
+                  Vade is a global cybersecurity company specializing in the
+                  development of collaborative email security solutions.
+                  Combining human intelligence and artificial intelligence,
+                  Vade's solutions form an AI-powered, people-enhanced
+                  cybersecurity alliance.
+                </p>
                 <br />
-                <br />
-                <span className="underline">Key features:</span>
+                <p>
+                  Vade protects more than 1.4 billion mailboxes, analyzes 100
+                  billion emails per day and works with more than 18,000
+                  customers from its 8 offices around the world.
+                </p>
+
                 <br />
                 <ul className="list-disc">
                   <li>
-                    Easy to use: Developed to be intuitive and easy to use for
-                    the final users
+                    Developed an email generator application, aiming to
+                    facilitate the sending of emails "from scratch" or from a
+                    database.
                   </li>
-                  <li>
-                    Customizable: Many personalization options to generate and
-                    send customized emails
-                  </li>
-                  <br />
-                  <span className="underline">Missions:</span>
-                  <li>
-                    Developed user interface for a mail generator application,
-                    ensuring an intuitive and user-friendly experience
-                  </li>
+                  <li>User interface design and development</li>
                   <li>
                     Built APIs using FastAPI to facilitate seamless
                     communication between various system components
@@ -113,14 +147,21 @@ const Experiences = () => {
                   </li>
                   <li>
                     Implemented comprehensive module tests and unit tests using
-                    Pytest, ensuring reliable and error-free code functionality
+                    Pytest/Cypress, ensuring reliable and error-free code
+                    functionality
                   </li>
                   <li>
-                    Ensured comprehensive documentation of projects using
-                    Mkdocs, facilitating knowledge sharing and team
-                    collaboration
+                    Development and implementation of quality control procedures
+                    and standards aimed at ensuring the quality of
+                    products/services.
                   </li>
                 </ul>
+                <br />
+                <span className="underline">Technologies:</span>
+                <p>
+                  Python, Javascript, HTML, CSS, Fastapi, BeautifulSoup,
+                  Cucumber, Cypress
+                </p>
                 <br />
                 <span className="underline">
                   Project management and environment:
@@ -130,25 +171,6 @@ const Experiences = () => {
                   <li>Git / Gitlab - Gitlab runners (CI/CD)</li>
                   <li>Linux system (Ubuntu 20)</li>
                 </ul>
-                <br />
-                <span className="underline">Technologies used:</span>
-                <p>
-                  Python, Javascript, HTML, CSS, Fastapi, Gitlab, Gitlab CI,
-                  BeautifulSoup
-                </p>
-                <br />
-                <span className="font-semibold">QA</span>
-                <br />
-                <ul className="list-disc">
-                  <li>
-                    Developing and implementing quality control procedures and
-                    standards to ensure product/service quality and compliance
-                  </li>
-                  <li>Reporting issues using Jira and monitoring the status</li>
-                </ul>
-                <br />
-                <span className="underline">Technologies used:</span>
-                <p>Cucumber, Cypress</p>
               </>
             }
           />
@@ -160,10 +182,18 @@ const Experiences = () => {
             address="Hô-Chi-Minh, Vietnam"
             work={
               <>
-              <ul className="list-disc">
-                <li>Developed expertise in ERP development, specializing in the Odoo platform, to create reliable and scalable enterprise solutions</li>
-                <li>Obtained a moderate proficiency in mobile app development using Angular</li>
-              </ul>
+                <br />
+                <ul className="list-disc">
+                  <li>
+                    Developed expertise in ERP development, specializing in the
+                    Odoo platform, to create reliable and scalable enterprise
+                    solutions
+                  </li>
+                  <li>
+                    Obtained a moderate proficiency in mobile app development
+                    using Angular
+                  </li>
+                </ul>
               </>
             }
           />
