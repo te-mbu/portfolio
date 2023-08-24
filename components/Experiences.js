@@ -134,7 +134,7 @@ const Experiences = () => {
                   <li>
                     Developed an email generator application, aiming to
                     facilitate the sending of emails &quot;from scratch&quot; or
-                    from a database.
+                    from a database
                   </li>
                   <li>User interface design and development</li>
                   <li>
