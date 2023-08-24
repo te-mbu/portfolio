@@ -93,7 +93,7 @@ const Experiences = () => {
                 <br />
                 <p>
                   My goal is to provide high quality web solutions that meet
-                  each client's unique needs and provide an excellent user
+                  each client&apos;s unique needs and provide an excellent user
                   experience.
                 </p>
                 <br />
@@ -119,7 +119,7 @@ const Experiences = () => {
                   Vade is a global cybersecurity company specializing in the
                   development of collaborative email security solutions.
                   Combining human intelligence and artificial intelligence,
-                  Vade's solutions form an AI-powered, people-enhanced
+                  Vade&apos;s solutions form an AI-powered, people-enhanced
                   cybersecurity alliance.
                 </p>
                 <br />
@@ -133,8 +133,8 @@ const Experiences = () => {
                 <ul className="list-disc">
                   <li>
                     Developed an email generator application, aiming to
-                    facilitate the sending of emails "from scratch" or from a
-                    database.
+                    facilitate the sending of emails &quot;from scratch&quot; or
+                    from a database.
                   </li>
                   <li>User interface design and development</li>
                   <li>
