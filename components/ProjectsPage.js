@@ -152,7 +152,7 @@ const ProjectsPage = () => {
               title="Cabinet RD"
               img="/images/projects/cabinetR&D.png"
               type="Client's Podiatry Website"
-              link="https://cabinet-renevey-dourgian.vercel.app/"
+              link="https://www.pedicure-podologue-dijon-rd.com/"
               github=""
             />
           </div>
