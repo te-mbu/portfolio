@@ -34,7 +34,7 @@ const Home = () => {
             </p>
             <div className="flex items-center self-start mt-2 lg:self-center sm:mb-16">
               <Link
-                href="/CV-MBU-TERENCE.pdf"
+                href="/CV-TERENCE-MBU.pdf"
                 target="_blank"
                 className="flex items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light"
                 download={true}
