@@ -26,11 +26,12 @@ const AboutPage = () => {
               beautiful, functional, and user-centered digital experiences. I
               have honed my skills through hands-on experiences and a drive for
               continuous learning. Through my educational journey, I have
-              cultivated a solid foundation and developed a sharp eye for detail.
+              cultivated a solid foundation and developed a sharp eye for
+              detail.
             </p>
             <p className="font-medium my-4 dark:text-light">
-              I am driven by the desire to push boundaries and deliver high-quality
-              work that leaves a positive impact on users.
+              I am driven by the desire to push boundaries and deliver
+              high-quality work that leaves a positive impact on users.
             </p>
             <p className="font-medium dark:text-light">
               I look forward to the opportunity to bring my skills to your next
