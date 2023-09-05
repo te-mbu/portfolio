@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Article = () => {
   return (
-    <div className="flex flex-col gap-3 ">
+    <div className="first:col-span-3 first:md:col-span-2 flex flex-col gap-3 ">
       <div className="relative aspect-video w-full">
         <Image src="/images/projects/studioa3.jpg" fill className="" />
       </div>
