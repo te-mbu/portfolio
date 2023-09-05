@@ -4,7 +4,7 @@ const PostsSchema = mongoose.Schema({
   topic: String,
   title: String,
   author: String,
-  article: String,
+  href: String,
 });
 
 const Post = mongoose.model("posts", PostsSchema);

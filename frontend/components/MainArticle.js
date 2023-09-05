@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Article = ({ topic, title, author, href }) => {
+const MainArticle = ({ topic, title, author, href }) => {
   const fullHref = `/articles/${href}`;
   return (
-    <div className="flex flex-col gap-3 col-span-2">
-      <div className="relative aspect-video w-full">
+    <div className="col-span-4 sm:col-span-2 flex flex-row md:flex-col md:gap-3 gap-8">
+      <div className="relative aspect-video md:w-full w-4/6">
         <Link href={fullHref}>
           <Image src="/images/projects/studioa3.jpg" fill className="" />
         </Link>
@@ -14,7 +14,7 @@ const Article = ({ topic, title, author, href }) => {
       <div className="flex flex-col gap-3">
         <p className="text-dark/75 dark:text-light/75">{topic}</p>
         <Link href={fullHref}>
-          <p className="uppercase font-semibold tracking-wider text-xl text-primary dark:text-primaryDark">
+          <p className="uppercase font-semibold tracking-wider text-2xl md:text-xl text-primary dark:text-primaryDark">
             {title}
           </p>
         </Link>
@@ -26,4 +26,4 @@ const Article = ({ topic, title, author, href }) => {
   );
 };
 
-export default Article;
+export default MainArticle;

@@ -5,7 +5,7 @@ const Post = require("../models/posts");
 
 // POST /send post
 router.post("/", function (req, res) {
-  if (!checkBody(req.body, ["topic", "title", "author", "article"])) {
+  if (!checkBody(req.body, ["topic", "title", "author", "href"])) {
     res.json({ result: false, error: "Missing or empty fields" });
     return;
   }
@@ -14,7 +14,7 @@ router.post("/", function (req, res) {
     topic: req.body.topic,
     title: req.body.title,
     author: req.body.author,
-    article: req.body.article,
+    href: req.body.href,
   });
 
   // Save new tweet to database
@@ -26,7 +26,7 @@ router.post("/", function (req, res) {
 /* GET home page. */
 router.get("/", function (req, res, next) {
   Post.find({}).then((data) => {
-    res.json({ allPost: data });
+    res.json({ allPosts: data });
   });
 });
 
