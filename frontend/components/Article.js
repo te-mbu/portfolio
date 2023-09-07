@@ -8,7 +8,11 @@ const Article = ({ topic, title, author, href }) => {
     <div className="flex flex-col gap-3 col-span-2">
       <div className="relative aspect-video w-full">
         <Link href={fullHref}>
-          <Image src="/images/projects/studioa3.jpg" fill className="" />
+          <Image
+            src="/images/projects/studioa3.jpg"
+            fill
+            className="rounded-xl"
+          />
         </Link>
       </div>
       <div className="flex flex-col gap-3">
