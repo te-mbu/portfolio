@@ -64,15 +64,15 @@ const Experiences = () => {
               <>
                 <br />
                 <p>
-                  J'accompagne mes clients dans la création de leur application
-                  web :
+                  J&apos;accompagne mes clients dans la création de leur
+                  application web :
                 </p>
                 <br />
                 <ul className="list-disc">
                   <li>
-                    Conception et développement d'une application web fluide,
-                    responsive et esthétiquement attractive en utilisant React,
-                    Tailwind CSS et Next.js.
+                    Conception et développement d&apos;une application web
+                    fluide, responsive et esthétiquement attractive en utilisant
+                    React, Tailwind CSS et Next.js.
                   </li>
                   <li>
                     Collaboration étroite avec le client pour comprendre ses
@@ -118,11 +118,11 @@ const Experiences = () => {
                 <br />
                 <p>
                   Vade est une entreprise mondiale de cybersécurité spécialisée
-                  dans le développement de solutions de sécurité de l'email
-                  collaborative. Combinant l'intelligence humaine et
-                  l'intelligence artificielle, les solutions de Vade forment une
-                  alliance de cybersécurité alimentée par l'IA et améliorée par
-                  les personnes.{" "}
+                  dans le développement de solutions de sécurité de l&apos;email
+                  collaborative. Combinant l&apos;intelligence humaine et
+                  l&apos;intelligence artificielle, les solutions de Vade
+                  forment une alliance de cybersécurité alimentée par l&apos;IA
+                  et améliorée par les personnes.{" "}
                 </p>
                 <br />
                 <p>
@@ -134,22 +134,24 @@ const Experiences = () => {
                 <br />
                 <ul className="list-disc">
                   <li>
-                    Développement d'une application générateur d'emails, visant
-                    à faciliter l'envoi de courriers électroniques "from
-                    scratch" ou à partir d'une base de données.
+                    Développement d&apos;une application générateur
+                    d&apos;emails, visant à faciliter l&apos;envoi de courriers
+                    électroniques &apos;from scratch&apos; ou à partir
+                    d&apos;une base de données.
                   </li>
                   <li>
-                    Conception et développement de l'interface utilisateur.
+                    Conception et développement de l&apos;interface utilisateur.
                   </li>
-                  <li>Création d'APIs à l'aide de FastAPI.</li>
+                  <li>Création d&apos;APIs à l&apos;aide de FastAPI.</li>
                   <li>
-                    Développement de solutions de scraping Web robustes à l'aide
-                    de Python et BeautifulSoup pour extraire des données
-                    provenant de diverses sources.
+                    Développement de solutions de scraping Web robustes à
+                    l&apos;aide de Python et BeautifulSoup pour extraire des
+                    données provenant de diverses sources.
                   </li>
                   <li>
-                    Mise en place de tests complets à l'aide de Pytest/Cypress,
-                    garantissant un code fonctionnel fiable et exempt d'erreurs.
+                    Mise en place de tests complets à l&apos;aide de
+                    Pytest/Cypress, garantissant un code fonctionnel fiable et
+                    exempt d&apos;erreurs.
                   </li>
                   <li>
                     Développement et mise en place de procédures de contrôle
@@ -178,7 +180,7 @@ const Experiences = () => {
                 <p>
                   KomIT Consulting est une entreprise de conseil stratégique et
                   technologique majeure, axée sur les technologies de
-                  l'information et des communications et est spécialisée
+                  l&apos;information et des communications et est spécialisée
                   notamment dans la sécurité informatique, le développement web
                   et les stratégies marketing.
                 </p>
@@ -186,8 +188,8 @@ const Experiences = () => {
                 <ul className="list-disc">
                   <li>Initiation au développement ERP - Odoo</li>
                   <li>
-                    Maîtrise modérée du développement d'applications mobiles à
-                    l'aide d'Angular.
+                    Maîtrise modérée du développement d&apos;applications
+                    mobiles.
                   </li>
                 </ul>
                 <br />

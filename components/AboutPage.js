@@ -23,14 +23,14 @@ const AboutPage = () => {
             </h2>
             <p className="font-medium dark:text-light">
               Bonjour, je suis Térence MBU, un Développeur Frontend dédié à la
-              création d'expériences digitales attrayantes, fonctionnelles et
-              centrées sur l'utilisateur.
+              création d&apos;expériences digitales attrayantes, fonctionnelles
+              et centrées sur l&apos;utilisateur.
             </p>
             <p className="font-medium mt-4 dark:text-light">
-              Je suis autodidacte, j'ai perfectionné mes compétences grâce à des
-              expériences pratiques et une volonté d'apprentissage continu. Tout
-              au long de mon parcours éducatif, j'ai acquis des bases solides et
-              développé un œil attentif pour le détail.
+              Je suis autodidacte, j&apos;ai perfectionné mes compétences grâce
+              à des expériences pratiques et une volonté d&apos;apprentissage
+              continu. Tout au long de mon parcours éducatif, j&apos;ai acquis
+              des bases solides et développé un œil attentif pour le détail.
             </p>
             <p className="font-medium my-4 dark:text-light">
               Je suis animé par le désir de repousser les limites et de fournir
