@@ -19,22 +19,27 @@ const AboutPage = () => {
           {/* ENFANT 1 */}
           <div className="w-1/2 flex flex-col items-start justify-between lg:w-full ">
             <h2 className="mb-4 text-3xl font-bold border-b-4 border-dark/75 dark:border-light/75 inline text-dark/75 dark:text-light/75 lg:text-2xl">
-              About Me
+              À propos de moi
             </h2>
             <p className="font-medium dark:text-light">
-              Hi, I&#39;m Térence MBU, a web developer dedicated for creating
-              beautiful, functional, and user-centered digital experiences. I
-              have honed my skills through hands-on experiences and a drive for
-              continuous learning. Through my educational journey, I have
-              cultivated a solid foundation and developed a sharp eye for detail.
+              Bonjour, je suis Térence MBU, un Développeur Frontend dédié à la
+              création d'expériences digitales attrayantes, fonctionnelles et
+              centrées sur l'utilisateur.
+            </p>
+            <p className="font-medium mt-4 dark:text-light">
+              Je suis autodidacte, j'ai perfectionné mes compétences grâce à des
+              expériences pratiques et une volonté d'apprentissage continu. Tout
+              au long de mon parcours éducatif, j'ai acquis des bases solides et
+              développé un œil attentif pour le détail.
             </p>
             <p className="font-medium my-4 dark:text-light">
-              I am driven by the desire to push boundaries and deliver high-quality
-              work that leaves a positive impact on users.
+              Je suis animé par le désir de repousser les limites et de fournir
+              un travail de haute qualité qui laisse une empreinte positive sur
+              les utilisateurs.
             </p>
             <p className="font-medium dark:text-light">
-              I look forward to the opportunity to bring my skills to your next
-              project.
+              Je me réjouis de mettre en œuvre mes compétences pour votre
+              prochain projet.
             </p>
           </div>
           {/* ENFANT 2 */}

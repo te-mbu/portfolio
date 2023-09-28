@@ -47,7 +47,7 @@ const Experiences = () => {
   return (
     <div className="my-16">
       <h2 className="text-3xl font-bold border-b-4 border-dark/75 dark:border-light/75 inline text-dark/75 dark:text-light/75 lg:text-2xl">
-        Experiences
+        Expériences
       </h2>
       <div ref={ref} className="w-full mx-auto relative mt-14">
         <motion.div
@@ -56,58 +56,59 @@ const Experiences = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 ">
           <Details
-            position="React Developer"
+            position="Développeur React"
             company="@Freelance"
-            time="2023 - Present"
+            time="2023 - Aujourd'hui"
             address="Paris, France"
             work={
               <>
                 <br />
                 <p>
-                  I support my clients in the creation of their web application:
+                  J'accompagne mes clients dans la création de leur application
+                  web :
                 </p>
                 <br />
                 <ul className="list-disc">
                   <li>
-                    Designing and developing responsive and visually appealing
-                    web applications using React, Tailwind CSS, and Next.js
+                    Conception et développement d'une application web fluide,
+                    responsive et esthétiquement attractive en utilisant React,
+                    Tailwind CSS et Next.js.
                   </li>
                   <li>
-                    Collaborating closely with clients to understand their
-                    requirements and translate them into functional and elegant
-                    websites.
+                    Collaboration étroite avec le client pour comprendre ses
+                    besoins et concrétiser ses idées.
                   </li>
                   <li>
-                    Implementing front-end designs using modern frameworks
-                    ensuring optimal performance
+                    Intégration de designs modernes avec une performance
+                    optimale.
                   </li>
                   <li>
-                    Providing ongoing website maintenance and support, including
-                    bug fixes and updates.
+                    Maintenance et support continue, incluant la correction de
+                    bugs et les mises à jour.
                   </li>
                   <li>
-                    Demonstrating strong problem-solving skills and the ability
-                    to work independently while meeting project deadlines
+                    Démonstration de solides compétences en résolution de
+                    problèmes et capacité à travailler de manière autonome tout
+                    en respectant les délais du projet.
                   </li>
                 </ul>
                 <br />
                 <p>
-                  My goal is to provide high quality web solutions that meet
-                  each client&apos;s unique needs and provide an excellent user
-                  experience.
+                  Mon objectif est de fournir des solutions web de haute qualité
+                  qui répondent aux besoins uniques de chaque client et qui
+                  offrent une excellente expérience utilisateur.
                 </p>
                 <br />
                 <p className="underline">Technologies:</p>
                 <ul className="list-disc">
                   <li>Javascript, React, Tailwind, Next, Node</li>
                   <li>Github, Gitlab, Git</li>
-                  <li>Unit test, TDD</li>
                 </ul>
               </>
             }
           />
           <Details
-            position="Fullstack Developer"
+            position="Développer FullStack"
             company="@Vade Secure"
             companyLink="https://www.vadesecure.com/fr/"
             time="2020 - 2022"
@@ -116,44 +117,44 @@ const Experiences = () => {
               <>
                 <br />
                 <p>
-                  Vade is a global cybersecurity company specializing in the
-                  development of collaborative email security solutions.
-                  Combining human intelligence and artificial intelligence,
-                  Vade&apos;s solutions form an AI-powered, people-enhanced
-                  cybersecurity alliance.
+                  Vade est une entreprise mondiale de cybersécurité spécialisée
+                  dans le développement de solutions de sécurité de l'email
+                  collaborative. Combinant l'intelligence humaine et
+                  l'intelligence artificielle, les solutions de Vade forment une
+                  alliance de cybersécurité alimentée par l'IA et améliorée par
+                  les personnes.{" "}
                 </p>
                 <br />
                 <p>
-                  Vade protects more than 1.4 billion mailboxes, analyzes 100
-                  billion emails per day and works with more than 18,000
-                  customers from its 8 offices around the world.
+                  Vade protège plus de 1.4 milliard de boîte email, analyse 100
+                  milliards emails par jour et travaille avec plus de 18000
+                  clients depuis ses 8 bureaux dans le monde.
                 </p>
 
                 <br />
                 <ul className="list-disc">
                   <li>
-                    Developed an email generator application, aiming to
-                    facilitate the sending of emails &quot;from scratch&quot; or
-                    from a database
-                  </li>
-                  <li>User interface design and development</li>
-                  <li>
-                    Built APIs using FastAPI to facilitate seamless
-                    communication between various system components
+                    Développement d'une application générateur d'emails, visant
+                    à faciliter l'envoi de courriers électroniques "from
+                    scratch" ou à partir d'une base de données.
                   </li>
                   <li>
-                    Developed robust web scraping solutions using Python and
-                    BeautifulSoup to extract and parse data from diverse sources
+                    Conception et développement de l'interface utilisateur.
+                  </li>
+                  <li>Création d'APIs à l'aide de FastAPI.</li>
+                  <li>
+                    Développement de solutions de scraping Web robustes à l'aide
+                    de Python et BeautifulSoup pour extraire des données
+                    provenant de diverses sources.
                   </li>
                   <li>
-                    Implemented comprehensive module tests and unit tests using
-                    Pytest/Cypress, ensuring reliable and error-free code
-                    functionality
+                    Mise en place de tests complets à l'aide de Pytest/Cypress,
+                    garantissant un code fonctionnel fiable et exempt d'erreurs.
                   </li>
                   <li>
-                    Development and implementation of quality control procedures
-                    and standards aimed at ensuring the quality of
-                    products/services.
+                    Développement et mise en place de procédures de contrôle
+                    qualité et de normes visant à assurer la qualité des
+                    produits/services.
                   </li>
                 </ul>
                 <br />
@@ -162,20 +163,11 @@ const Experiences = () => {
                   Python, Javascript, HTML, CSS, Fastapi, BeautifulSoup,
                   Cucumber, Cypress
                 </p>
-                <br />
-                <span className="underline">
-                  Project management and environment:
-                </span>
-                <br />
-                <ul className="list-disc">
-                  <li>Git / Gitlab - Gitlab runners (CI/CD)</li>
-                  <li>Linux system (Ubuntu 20)</li>
-                </ul>
               </>
             }
           />
           <Details
-            position="Software Developer Intern"
+            position="Stagiaire Ingénieur logiciel"
             company="@Komit"
             companyLink="https://komit-consulting.com/"
             time="2018 - 2019"
@@ -183,17 +175,24 @@ const Experiences = () => {
             work={
               <>
                 <br />
+                <p>
+                  KomIT Consulting est une entreprise de conseil stratégique et
+                  technologique majeure, axée sur les technologies de
+                  l'information et des communications et est spécialisée
+                  notamment dans la sécurité informatique, le développement web
+                  et les stratégies marketing.
+                </p>
+                <br />
                 <ul className="list-disc">
+                  <li>Initiation au développement ERP - Odoo</li>
                   <li>
-                    Developed expertise in ERP development, specializing in the
-                    Odoo platform, to create reliable and scalable enterprise
-                    solutions
-                  </li>
-                  <li>
-                    Obtained a moderate proficiency in mobile app development
-                    using Angular
+                    Maîtrise modérée du développement d'applications mobiles à
+                    l'aide d'Angular.
                   </li>
                 </ul>
+                <br />
+                <span className="underline">Technologies:</span>
+                <p>Javascript, HTML, CSS, Git, Github</p>
               </>
             }
           />

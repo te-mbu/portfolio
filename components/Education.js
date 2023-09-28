@@ -40,7 +40,7 @@ const Education = () => {
   return (
     <div className="mt-16 mb-80">
       <h2 className="text-3xl font-bold border-b-4 border-dark/75 dark:border-light/75 inline text-dark/75 dark:text-light/75">
-        Education
+        Formation
       </h2>
       <div ref={ref} className="w-full mx-auto relative mt-14">
         <motion.div
@@ -73,7 +73,7 @@ const Education = () => {
             type="Master 2 - Industries de Réseau et Économie Numérique"
             time="2021 - 2022"
             place="Université Paris Dauphine (PSL) - Paris, France"
-            info="Master's degree jointly directed by Université Paris Dauphine (PSL), École Polytechnique, CentraleSupélec, Télécom Paris, Paris-Saclay University"
+            info="Master codirigé par l'Université Paris Dauphine (PSL), École Polytechnique, CentraleSupélec, Télécom Paris, Université Paris-Saclay"
           />
           <Details
             type="Master 1 - Systèmes d’informations et économie numérique"
@@ -83,9 +83,9 @@ const Education = () => {
           <Details
             type="École 42"
             time="2019 - 2021"
-            place="École 19 (42 Network) - Brussels, Belgium"
+            place="École 19 (42 Network) - Bruxelles, Belgique"
             // TODO
-            info="At School 42, I completed an intensive Fullstack Software Engineering program. This unique educational experience emphasized hands-on learning and collaboration within a peer-to-peer environment. The curriculum focused on developing essential programming skills and problem-solving abilities through engaging projects and real-world challenges. During my time at School 42, I gained a solid foundation in various programming languages, frameworks, and development methodologies. This experience not only sharpened my technical proficiency but also fostered valuable teamwork and adaptability skills."
+            info="À l'École 42, j'ai suivi un programme intensif. Cette expérience unique mettait l’accent sur l’apprentissage pratique et la collaboration dans un environnement peer-to-peer. Le programme était axé sur le développement de compétences essentielles en programmation et de capacités de résolution de problèmes à travers des projets engageants et des défis du monde réel. Au cours de mes années à l'École 42, j'ai acquis une base solide dans divers langages de programmation, frameworks et méthodologies de développement. Cette expérience a non seulement affiné mes compétences techniques, mais a également favorisé de précieuses compétences en matière de travail d'équipe et d'adaptabilité."
           />
         </ul>
       </div>

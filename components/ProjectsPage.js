@@ -57,7 +57,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
               github ? "ml-4" : ""
             } rounded-lg bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base`}
           >
-            Visit Project
+            Voir le projet
           </Link>
         </div>
       </div>
@@ -105,7 +105,7 @@ const Project = ({ title, type, img, link, github }) => {
             className="
                rounded-lg bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base"
           >
-            Visit
+            Voir
           </Link>
           {github ? (
             <Link href={github} target="_blank">
@@ -123,7 +123,7 @@ const ProjectsPage = () => {
     <main className="w-full mb-16 flex flex-col items-center justify-center">
       <Layout className="pt-16">
         <AnimatedText
-          text="My Recent Work"
+          text="Portfolio"
           className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
         />
         <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 sm:mt-10">
@@ -131,8 +131,8 @@ const ProjectsPage = () => {
             <FeaturedProject
               title="Studio A3"
               img="/images/projects/studioa3.jpg"
-              summary="Transformed Studio A3's vision into reality with a dynamic and responsive website powered by React and Tailwind CSS. Seamlessly blending creativity and technical finesse, the project culminated in an exceptional user experience. I'm delighted to showcase this successful collaboration."
-              type="Client's Web Design Agency Website"
+              summary="J'ai transformé la vision de Studio A3 en réalité avec un site web propulsé par React.js, Next.js et Tailwind CSS. Mêlant harmonieusement créativité et finesse technique, le projet a abouti à une expérience utilisateur exceptionnelle. Je suis ravi de présenter cette collaboration fructueuse."
+              type="Site web d'une agence de web design"
               link="https://studio-a3.vercel.app/"
               github=""
             />
@@ -141,17 +141,17 @@ const ProjectsPage = () => {
             <FeaturedProject
               title="Portfolio"
               img="/images/projects/portfolio.jpg"
-              summary="A professional portfolio website using React JS, Tailwind CSS, Framer-motion, and Styled-components. It has smooth page transitions, unique design and it is mobile responsive."
-              type="Portfolio Website"
+              summary="Un site web de portfolio professionnel utilisant React.js, Next.js, Tailwind CSS et Framer-motion. Il présente des transitions de page fluides, un design unique et est responsive."
+              type="Site personnel"
               link="/"
               github="https://github.com/te-mbu/portfolio"
             />
           </div>
           <div className="col-span-6 sm:col-span-12">
             <Project
-              title="Cabinet RD"
+              title="Cabinet R&D"
               img="/images/projects/cabinetR&D.png"
-              type="Client's Podiatry Website"
+              type="Site web d'un pédicure-podologue"
               link="https://www.pedicure-podologue-dijon-rd.com/"
               github=""
             />
@@ -161,7 +161,7 @@ const ProjectsPage = () => {
             <Project
               title="Chotto"
               img="/images/projects/chotto.jpg"
-              type="Restaurant Website"
+              type="Site d'un restaurant Japonais"
               link="https://chotto.vercel.app/"
               github="https://github.com/te-mbu/chotto"
             />
@@ -170,9 +170,8 @@ const ProjectsPage = () => {
             <FeaturedProject
               title="Twitter Clone"
               img="/images/projects/twitter-clone.jpg"
-              summary="This project aimed to replicate the core functionalities of the popular social media platform Twitter using React, Tailwind CSS, Redux, MongoDB, and Node.js.
-              Throughout the development process, I focused on implementing essential features, including user authentication, posting tweets,  like/delete a tweet, and displaying real-time updates. By successfully completing this project, I deepened my understanding of frontend development, state management, backend integration, and database management. "
-              type="Web Application"
+              summary="Ce projet visait à reproduire les fonctionnalités principales de Twitter en utilisant React.js, Next.js, Tailwind CSS, Redux, MongoDB et Node.js. Tout au long du processus de développement, j'ai mis l'accent sur la mise en œuvre de fonctionnalités essentielles, telles que l'authentification des utilisateurs, la publication de tweets, le like/suppression d'un tweet et l'affichage des mises à jour en temps réel. En menant à bien ce projet, j'ai approfondi ma compréhension de la gestion d'état, de l'intégration frontend/backend et de la gestion de base de données."
+              type="Application Web"
               link="https://twitter-clone-steel-two-89.vercel.app/"
               github="https://github.com/te-mbu/twitter-clone-backend"
             />

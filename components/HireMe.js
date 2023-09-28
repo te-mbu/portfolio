@@ -17,7 +17,7 @@ const HireMe = () => {
         target="_blank"
         className="absolute text-light dark:text-dark bg-dark dark:bg-light px-3 py-8 md:px-1 md:py-4 md:text-[10px] rounded-full shadow-md border border-solid border-dark dark:border-light font-semibold hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light"
       >
-        Hire Me
+        Contact
       </Link>
     </div>
   );
