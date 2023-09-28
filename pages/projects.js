@@ -10,7 +10,7 @@ function Projects() {
         <meta name="Projects" content="Project Page" />
       </Head>
       <TransitionEffect />
-      <ProjectsPage />;
+      <ProjectsPage />
     </>
   );
 }

@@ -10,7 +10,7 @@ function About() {
         <meta name="About" content="About Page" />
       </Head>
       <TransitionEffect />
-      <AboutPage />;
+      <AboutPage />
     </>
   );
 }

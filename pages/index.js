@@ -10,7 +10,7 @@ function Index() {
         <meta name="Home" content="Homepage" />
       </Head>
       <TransitionEffect />
-      <Home />;
+      <Home />
     </>
   );
 }
