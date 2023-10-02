@@ -27,7 +27,7 @@ const Home = () => {
               className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text3xl"
             />
             <p className="my-6 text-md font-medium md:text-md sm:text-sm md:my-8">
-              Développeur Frontend Freelance React.js/Next.js
+              Développeur Frontend React.js/Next.js
             </p>
 
             <div className="flex items-center self-start mt-2 lg:self-center sm:mb-16">
