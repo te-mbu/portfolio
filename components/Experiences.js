@@ -57,8 +57,62 @@ const Experiences = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 ">
           <Details
             position="Développeur React"
-            company="@Freelance"
+            company="@Kaspr"
+            companyLink="https://www.kaspr.io/fr/"
             time="2023 - Aujourd'hui"
+            address="Paris, France"
+            work={
+              <>
+                <br />
+                <p>
+                  Kaspr (groupe Cognism) est une plateforme de prospection. Avec
+                  une base de données de plus de 500 millions de numéros et
+                  emails, Kaspr facilite l&apos;accès aux coordonnées des
+                  ocntacts. Utilisée par 50 000 entreprises et comptant plus de
+                  100 000 utilisateurs actifs, Kaspr s&apos;impose comme une
+                  solution de choix dans son domaine.
+                </p>
+                <br />
+                <ul className="list-disc">
+                  <li>
+                    Développement, test et maintenance de solutions front-end
+                    avec React.js
+                  </li>
+                  <li>
+                    Développement de nouvelles fonctionnalités et amélioration
+                    du code existant.
+                  </li>
+                  <li>
+                    Développement et maintenance de composants d&apos;interface
+                    utilisateur réutilisables, assurant la cohérence visuelle
+                    sur l&apos;ensemble de la plateforme.
+                  </li>
+                  <li>
+                    Travailler en étroite collaboration avec les chefs de projet
+                    (PM), les développeurs backend et les designers pour assurer
+                    une mise en œuvre efficace des fonctionnalités.
+                  </li>
+                  <li>
+                    Intégration de maquettes Figma avec un souci du détail pour
+                    obtenir un résultat Pixel perfect.
+                  </li>
+                  <li>
+                    Création et mise à jour de la documentation technique.
+                  </li>
+                </ul>
+                <br />
+                <p className="underline">Technologies:</p>
+                <ul className="list-disc">
+                  <li>React, Javascript, Redux, Jest, React Testing Library</li>
+                  <li>Gitlab, Git</li>
+                </ul>
+              </>
+            }
+          />
+          <Details
+            position="Développeur React"
+            company="@Freelance"
+            time="2023"
             address="Paris, France"
             work={
               <>
