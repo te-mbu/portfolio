@@ -133,7 +133,7 @@ const ProjectsPage = () => {
               img="/images/projects/studioa3.jpg"
               summary="J'ai transformé la vision de Studio A3 en réalité avec un site web propulsé par React.js, Next.js et Tailwind CSS. Mêlant harmonieusement créativité et finesse technique, le projet a abouti à une expérience utilisateur exceptionnelle. Je suis ravi de présenter cette collaboration fructueuse."
               type="Site web d'une agence de web design"
-              link="https://studio-a3.vercel.app/"
+              link="https://www.studio-a3.com/"
               github=""
             />
           </div>
