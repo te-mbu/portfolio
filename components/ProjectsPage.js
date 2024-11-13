@@ -156,7 +156,7 @@ const ProjectsPage = () => {
               github=""
             />
           </div>
-          <div className="col-span-6 sm:col-span-12">
+          {/* <div className="col-span-6 sm:col-span-12">
             {" "}
             <Project
               title="Chotto"
@@ -165,8 +165,8 @@ const ProjectsPage = () => {
               link="https://chotto.vercel.app/"
               github="https://github.com/te-mbu/chotto"
             />
-          </div>
-          <div className="col-span-12">
+          </div> */}
+          {/* <div className="col-span-12">
             <FeaturedProject
               title="Twitter Clone"
               img="/images/projects/twitter-clone.jpg"
@@ -175,18 +175,18 @@ const ProjectsPage = () => {
               link="https://twitter-clone-steel-two-89.vercel.app/"
               github="https://github.com/te-mbu/twitter-clone-backend"
             />
-          </div>
-          <div className="col-span-6 sm:col-span-12">
-            {" "}
-            {/* <Project
+          </div> */}
+          {/* <div className="col-span-6 sm:col-span-12">
+       
+            <Project
               title="Portfolio"
               img="/images/projects/project-portfolio.jpg"
               type="Featured Project"
               link="/"
               github="https://github.com/te-mbu/portfolio"
             />
-          </div>
-          <div className="col-span-6 sm:col-span-12">
+          </div> */}
+          {/* <div className="col-span-6 sm:col-span-12">
             {" "}
             <Project
               title="Portfolio"
@@ -194,8 +194,8 @@ const ProjectsPage = () => {
               type="Featured Project"
               link="/"
               github="https://github.com/te-mbu/portfolio"
-            /> */}
-          </div>
+            />
+          </div> */}
         </div>
       </Layout>
     </main>
