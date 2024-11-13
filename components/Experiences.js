@@ -114,50 +114,52 @@ const Experiences = () => {
             position="Développeur React"
             company="@Freelance"
             time="2023"
+            companyLink="https://www.kaspr.io/fr/"
             address="Paris, France"
             work={
               <>
                 <br />
                 <p>
-                  J&apos;accompagne mes clients dans la création de leur
-                  application web :
+                  Kaspr (groupe Cognism) est une plateforme de prospection. Avec
+                  une base de données de plus de 500 millions de numéros et
+                  emails, Kaspr facilite l&apos;accès aux coordonnées des
+                  ocntacts. Utilisée par 50 000 entreprises et comptant plus de
+                  100 000 utilisateurs actifs, Kaspr s&apos;impose comme une
+                  solution de choix dans son domaine.
                 </p>
                 <br />
                 <ul className="list-disc">
                   <li>
-                    Conception et développement d&apos;une application web
-                    fluide, responsive et esthétiquement attractive en utilisant
-                    React, Tailwind CSS et Next.js.
+                    Développement, test et maintenance de solutions front-end
+                    avec React.js
                   </li>
                   <li>
-                    Collaboration étroite avec le client pour comprendre ses
-                    besoins et concrétiser ses idées.
+                    Développement de nouvelles fonctionnalités et amélioration
+                    du code existant.
                   </li>
                   <li>
-                    Intégration de designs modernes avec une performance
-                    optimale.
+                    Développement et maintenance de composants d&apos;interface
+                    utilisateur réutilisables, assurant la cohérence visuelle
+                    sur l&apos;ensemble de la plateforme.
                   </li>
                   <li>
-                    Maintenance et support continue, incluant la correction de
-                    bugs et les mises à jour.
+                    Travailler en étroite collaboration avec les chefs de projet
+                    (PM), les développeurs backend et les designers pour assurer
+                    une mise en œuvre efficace des fonctionnalités.
                   </li>
                   <li>
-                    Démonstration de solides compétences en résolution de
-                    problèmes et capacité à travailler de manière autonome tout
-                    en respectant les délais du projet.
+                    Intégration de maquettes Figma avec un souci du détail pour
+                    obtenir un résultat Pixel perfect.
+                  </li>
+                  <li>
+                    Création et mise à jour de la documentation technique.
                   </li>
                 </ul>
                 <br />
-                <p>
-                  Mon objectif est de fournir des solutions web de haute qualité
-                  qui répondent aux besoins uniques de chaque client et qui
-                  offrent une excellente expérience utilisateur.
-                </p>
-                <br />
                 <p className="underline">Technologies:</p>
                 <ul className="list-disc">
-                  <li>Javascript, React, Tailwind, Next, Node</li>
-                  <li>Github, Gitlab, Git</li>
+                  <li>React, Javascript, Redux, Jest, React Testing Library</li>
+                  <li>Gitlab, Git</li>
                 </ul>
               </>
             }
